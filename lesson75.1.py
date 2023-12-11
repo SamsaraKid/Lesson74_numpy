@@ -64,3 +64,9 @@ print(arr.mean())
 print(arr.max(axis=1))
 print(arr.min(axis=1))
 print(arr.mean(axis=1))
+
+
+arr = np.random.randint(1, 100, size=(4, 4))
+print(np.mean(arr, axis=0))  # среднее в столбиках
+a = np.mean(arr, axis=0)  # среднее в столбиках
+b = np.mean(arr, axis=1).reshape(4, 1)  # среднее в строках
